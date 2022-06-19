@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { LiveVideo } from "./svg";
+
 
 function App() {
+  const get =async()=>{ 
+    const res=await fetch("http://localhost:8000");
+    console.log(res)
+  }
+  get();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     Welcome to frontend
+<div className="all_friends_icon">
+    
     </div>
+    <div className="trash_icon">
+
+    </div>
+    <LiveVideo color="red"/>
+    </div>
+   
+    
   );
 }
 
